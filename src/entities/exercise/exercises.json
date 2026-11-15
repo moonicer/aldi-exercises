@@ -1,0 +1,1710 @@
+[
+  {
+    "id": "pf-slow",
+    "visual": "hammock",
+    "locked": false,
+    "reviewed": false,
+    "durationSec": 80,
+    "content": {
+      "ru": {
+        "title": "Медленные сокращения тазового дна",
+        "description": "Мышцы тазового дна работают как гамак, поддерживающий органы малого таза. Медленные сокращения с удержанием укрепляют эти мышцы.",
+        "steps": [
+          "Лягте на спину или сядьте удобно, согнув колени.",
+          "Медленно вдохните через нос в течение 4 секунд.",
+          "На выдохе мягко сожмите и подтяните мышцы тазового дна, как будто сдерживаете мочеиспускание и газы.",
+          "Удерживайте сокращение 5 секунд, дыша спокойно. Не задерживайте дыхание.",
+          "Медленно расслабьте мышцы за 2 секунды, затем отдохните 4 секунды.",
+          "Повторите 5 раз. Остановитесь, если почувствуете боль."
+        ],
+        "cues": [
+          {
+            "atSec": 0,
+            "phase": "inhale",
+            "text": "Вдох"
+          },
+          {
+            "atSec": 4,
+            "phase": "squeeze",
+            "text": "Выдох — сожмите"
+          },
+          {
+            "atSec": 5,
+            "phase": "hold",
+            "text": "Удерживайте, дышите спокойно"
+          },
+          {
+            "atSec": 10,
+            "phase": "release",
+            "text": "Медленно расслабьте"
+          },
+          {
+            "atSec": 12,
+            "phase": "rest",
+            "text": "Отдых"
+          },
+          {
+            "atSec": 16,
+            "phase": "inhale",
+            "text": "Вдох"
+          },
+          {
+            "atSec": 20,
+            "phase": "squeeze",
+            "text": "Выдох — сожмите"
+          },
+          {
+            "atSec": 21,
+            "phase": "hold",
+            "text": "Удерживайте, дышите спокойно"
+          },
+          {
+            "atSec": 26,
+            "phase": "release",
+            "text": "Медленно расслабьте"
+          },
+          {
+            "atSec": 28,
+            "phase": "rest",
+            "text": "Отдых"
+          },
+          {
+            "atSec": 32,
+            "phase": "inhale",
+            "text": "Вдох"
+          },
+          {
+            "atSec": 36,
+            "phase": "squeeze",
+            "text": "Выдох — сожмите"
+          },
+          {
+            "atSec": 37,
+            "phase": "hold",
+            "text": "Удерживайте, дышите спокойно"
+          },
+          {
+            "atSec": 42,
+            "phase": "release",
+            "text": "Медленно расслабьте"
+          },
+          {
+            "atSec": 44,
+            "phase": "rest",
+            "text": "Отдых"
+          },
+          {
+            "atSec": 48,
+            "phase": "inhale",
+            "text": "Вдох"
+          },
+          {
+            "atSec": 52,
+            "phase": "squeeze",
+            "text": "Выдох — сожмите"
+          },
+          {
+            "atSec": 53,
+            "phase": "hold",
+            "text": "Удерживайте, дышите спокойно"
+          },
+          {
+            "atSec": 58,
+            "phase": "release",
+            "text": "Медленно расслабьте"
+          },
+          {
+            "atSec": 60,
+            "phase": "rest",
+            "text": "Отдых"
+          },
+          {
+            "atSec": 64,
+            "phase": "inhale",
+            "text": "Вдох"
+          },
+          {
+            "atSec": 68,
+            "phase": "squeeze",
+            "text": "Выдох — сожмите"
+          },
+          {
+            "atSec": 69,
+            "phase": "hold",
+            "text": "Удерживайте, дышите спокойно"
+          },
+          {
+            "atSec": 74,
+            "phase": "release",
+            "text": "Медленно расслабьте"
+          },
+          {
+            "atSec": 76,
+            "phase": "rest",
+            "text": "Отдых"
+          }
+        ],
+        "machineTranslated": true
+      },
+      "kk": {
+        "title": "Жамбас түбі бұлшықеттерін баяу жиыру",
+        "description": "Жамбас түбі бұлшықеттері жамбас ағзаларын тіреп тұрады. Баяу жиыру оларды нығайтуға көмектеседі.",
+        "steps": [
+          "Шалқаңыздан жатыңыз немесе ыңғайлы отырыңыз.",
+          "Мұрынмен 4 секунд дем алыңыз.",
+          "Дем шығарғанда жамбас түбі бұлшықеттерін ақырын қысып, жоғары тартыңыз.",
+          "5 секунд ұстап, еркін тыныстаңыз. Деміңізді ұстамаңыз.",
+          "2 секундта босатып, 4 секунд демалыңыз. 5 рет қайталаңыз, ауырса тоқтаңыз."
+        ],
+        "cues": [
+          {
+            "atSec": 0,
+            "phase": "inhale",
+            "text": "Демді ішке алыңыз"
+          },
+          {
+            "atSec": 4,
+            "phase": "squeeze",
+            "text": "Дем шығарып, қысыңыз"
+          },
+          {
+            "atSec": 5,
+            "phase": "hold",
+            "text": "Ұстап тұрыңыз, тыныстаңыз"
+          },
+          {
+            "atSec": 10,
+            "phase": "release",
+            "text": "Босатыңыз"
+          },
+          {
+            "atSec": 12,
+            "phase": "rest",
+            "text": "Демалыңыз"
+          },
+          {
+            "atSec": 16,
+            "phase": "inhale",
+            "text": "Демді ішке алыңыз"
+          },
+          {
+            "atSec": 20,
+            "phase": "squeeze",
+            "text": "Дем шығарып, қысыңыз"
+          },
+          {
+            "atSec": 21,
+            "phase": "hold",
+            "text": "Ұстап тұрыңыз, тыныстаңыз"
+          },
+          {
+            "atSec": 26,
+            "phase": "release",
+            "text": "Босатыңыз"
+          },
+          {
+            "atSec": 28,
+            "phase": "rest",
+            "text": "Демалыңыз"
+          },
+          {
+            "atSec": 32,
+            "phase": "inhale",
+            "text": "Демді ішке алыңыз"
+          },
+          {
+            "atSec": 36,
+            "phase": "squeeze",
+            "text": "Дем шығарып, қысыңыз"
+          },
+          {
+            "atSec": 37,
+            "phase": "hold",
+            "text": "Ұстап тұрыңыз, тыныстаңыз"
+          },
+          {
+            "atSec": 42,
+            "phase": "release",
+            "text": "Босатыңыз"
+          },
+          {
+            "atSec": 44,
+            "phase": "rest",
+            "text": "Демалыңыз"
+          },
+          {
+            "atSec": 48,
+            "phase": "inhale",
+            "text": "Демді ішке алыңыз"
+          },
+          {
+            "atSec": 52,
+            "phase": "squeeze",
+            "text": "Дем шығарып, қысыңыз"
+          },
+          {
+            "atSec": 53,
+            "phase": "hold",
+            "text": "Ұстап тұрыңыз, тыныстаңыз"
+          },
+          {
+            "atSec": 58,
+            "phase": "release",
+            "text": "Босатыңыз"
+          },
+          {
+            "atSec": 60,
+            "phase": "rest",
+            "text": "Демалыңыз"
+          },
+          {
+            "atSec": 64,
+            "phase": "inhale",
+            "text": "Демді ішке алыңыз"
+          },
+          {
+            "atSec": 68,
+            "phase": "squeeze",
+            "text": "Дем шығарып, қысыңыз"
+          },
+          {
+            "atSec": 69,
+            "phase": "hold",
+            "text": "Ұстап тұрыңыз, тыныстаңыз"
+          },
+          {
+            "atSec": 74,
+            "phase": "release",
+            "text": "Босатыңыз"
+          },
+          {
+            "atSec": 76,
+            "phase": "rest",
+            "text": "Демалыңыз"
+          }
+        ],
+        "machineTranslated": false
+      },
+      "uz": {
+        "title": "Tos tubi mushaklarini sekin qisish",
+        "description": "Tos tubi mushaklari kichik tos aʼzolarini ushlab turuvchi gamakka oʻxshaydi. Sekin qisish va ushlab turish bu mushaklarni mustahkamlaydi.",
+        "steps": [
+          "Chalqancha yoting yoki tizzalaringizni bukib, qulay oʻtiring.",
+          "Burun orqali 4 soniya davomida sekin nafas oling.",
+          "Nafas chiqarayotganda tos tubi mushaklarini yumshoq qisib, yuqoriga torting — xuddi siydik va gazni ushlab turgandek.",
+          "Qisishni 5 soniya ushlab turing, odatdagidek nafas oling. Nafasingizni ushlab turmang.",
+          "2 soniya davomida sekin boʻshashtiring, soʻng 4 soniya dam oling.",
+          "5 marta takrorlang. Ogʻriq sezsangiz, toʻxtating."
+        ],
+        "cues": [
+          {
+            "atSec": 0,
+            "phase": "inhale",
+            "text": "Nafas oling"
+          },
+          {
+            "atSec": 4,
+            "phase": "squeeze",
+            "text": "Nafas chiqaring va qising"
+          },
+          {
+            "atSec": 5,
+            "phase": "hold",
+            "text": "Ushlab turing, odatdagidek nafas oling"
+          },
+          {
+            "atSec": 10,
+            "phase": "release",
+            "text": "Sekin boʻshashtiring"
+          },
+          {
+            "atSec": 12,
+            "phase": "rest",
+            "text": "Dam oling"
+          },
+          {
+            "atSec": 16,
+            "phase": "inhale",
+            "text": "Nafas oling"
+          },
+          {
+            "atSec": 20,
+            "phase": "squeeze",
+            "text": "Nafas chiqaring va qising"
+          },
+          {
+            "atSec": 21,
+            "phase": "hold",
+            "text": "Ushlab turing, odatdagidek nafas oling"
+          },
+          {
+            "atSec": 26,
+            "phase": "release",
+            "text": "Sekin boʻshashtiring"
+          },
+          {
+            "atSec": 28,
+            "phase": "rest",
+            "text": "Dam oling"
+          },
+          {
+            "atSec": 32,
+            "phase": "inhale",
+            "text": "Nafas oling"
+          },
+          {
+            "atSec": 36,
+            "phase": "squeeze",
+            "text": "Nafas chiqaring va qising"
+          },
+          {
+            "atSec": 37,
+            "phase": "hold",
+            "text": "Ushlab turing, odatdagidek nafas oling"
+          },
+          {
+            "atSec": 42,
+            "phase": "release",
+            "text": "Sekin boʻshashtiring"
+          },
+          {
+            "atSec": 44,
+            "phase": "rest",
+            "text": "Dam oling"
+          },
+          {
+            "atSec": 48,
+            "phase": "inhale",
+            "text": "Nafas oling"
+          },
+          {
+            "atSec": 52,
+            "phase": "squeeze",
+            "text": "Nafas chiqaring va qising"
+          },
+          {
+            "atSec": 53,
+            "phase": "hold",
+            "text": "Ushlab turing, odatdagidek nafas oling"
+          },
+          {
+            "atSec": 58,
+            "phase": "release",
+            "text": "Sekin boʻshashtiring"
+          },
+          {
+            "atSec": 60,
+            "phase": "rest",
+            "text": "Dam oling"
+          },
+          {
+            "atSec": 64,
+            "phase": "inhale",
+            "text": "Nafas oling"
+          },
+          {
+            "atSec": 68,
+            "phase": "squeeze",
+            "text": "Nafas chiqaring va qising"
+          },
+          {
+            "atSec": 69,
+            "phase": "hold",
+            "text": "Ushlab turing, odatdagidek nafas oling"
+          },
+          {
+            "atSec": 74,
+            "phase": "release",
+            "text": "Sekin boʻshashtiring"
+          },
+          {
+            "atSec": 76,
+            "phase": "rest",
+            "text": "Dam oling"
+          }
+        ],
+        "machineTranslated": true
+      },
+      "en": {
+        "title": "Slow pelvic floor squeezes",
+        "description": "Your pelvic floor muscles work like a hammock that supports the pelvic organs. Slow squeezes with a hold help strengthen them.",
+        "steps": [
+          "Lie on your back or sit comfortably with your knees bent.",
+          "Breathe in slowly through your nose for 4 seconds.",
+          "As you breathe out, gently squeeze and lift your pelvic floor muscles, as if holding in wind and urine.",
+          "Hold the squeeze for 5 seconds while breathing normally. Do not hold your breath.",
+          "Slowly release over 2 seconds, then rest for 4 seconds.",
+          "Repeat 5 times. Stop if you feel pain."
+        ],
+        "cues": [
+          {
+            "atSec": 0,
+            "phase": "inhale",
+            "text": "Breathe in"
+          },
+          {
+            "atSec": 4,
+            "phase": "squeeze",
+            "text": "Breathe out and squeeze"
+          },
+          {
+            "atSec": 5,
+            "phase": "hold",
+            "text": "Hold, breathe normally"
+          },
+          {
+            "atSec": 10,
+            "phase": "release",
+            "text": "Slowly release"
+          },
+          {
+            "atSec": 12,
+            "phase": "rest",
+            "text": "Rest"
+          },
+          {
+            "atSec": 16,
+            "phase": "inhale",
+            "text": "Breathe in"
+          },
+          {
+            "atSec": 20,
+            "phase": "squeeze",
+            "text": "Breathe out and squeeze"
+          },
+          {
+            "atSec": 21,
+            "phase": "hold",
+            "text": "Hold, breathe normally"
+          },
+          {
+            "atSec": 26,
+            "phase": "release",
+            "text": "Slowly release"
+          },
+          {
+            "atSec": 28,
+            "phase": "rest",
+            "text": "Rest"
+          },
+          {
+            "atSec": 32,
+            "phase": "inhale",
+            "text": "Breathe in"
+          },
+          {
+            "atSec": 36,
+            "phase": "squeeze",
+            "text": "Breathe out and squeeze"
+          },
+          {
+            "atSec": 37,
+            "phase": "hold",
+            "text": "Hold, breathe normally"
+          },
+          {
+            "atSec": 42,
+            "phase": "release",
+            "text": "Slowly release"
+          },
+          {
+            "atSec": 44,
+            "phase": "rest",
+            "text": "Rest"
+          },
+          {
+            "atSec": 48,
+            "phase": "inhale",
+            "text": "Breathe in"
+          },
+          {
+            "atSec": 52,
+            "phase": "squeeze",
+            "text": "Breathe out and squeeze"
+          },
+          {
+            "atSec": 53,
+            "phase": "hold",
+            "text": "Hold, breathe normally"
+          },
+          {
+            "atSec": 58,
+            "phase": "release",
+            "text": "Slowly release"
+          },
+          {
+            "atSec": 60,
+            "phase": "rest",
+            "text": "Rest"
+          },
+          {
+            "atSec": 64,
+            "phase": "inhale",
+            "text": "Breathe in"
+          },
+          {
+            "atSec": 68,
+            "phase": "squeeze",
+            "text": "Breathe out and squeeze"
+          },
+          {
+            "atSec": 69,
+            "phase": "hold",
+            "text": "Hold, breathe normally"
+          },
+          {
+            "atSec": 74,
+            "phase": "release",
+            "text": "Slowly release"
+          },
+          {
+            "atSec": 76,
+            "phase": "rest",
+            "text": "Rest"
+          }
+        ],
+        "machineTranslated": true
+      }
+    }
+  },
+  {
+    "id": "pelvic-tilt",
+    "visual": "mannequin",
+    "locked": false,
+    "reviewed": false,
+    "durationSec": 60,
+    "content": {
+      "ru": {
+        "title": "Наклон таза",
+        "description": "Мягкое движение, которое учит согласовывать дыхание, мышцы живота и тазового дна.",
+        "steps": [
+          "Лягте на спину, согните колени, стопы стоят на полу на ширине бёдер.",
+          "На вдохе позвольте пояснице сохранить естественный изгиб.",
+          "На выдохе напрягите мышцы живота и мягко наклоните таз так, чтобы поясница приблизилась к полу.",
+          "Удерживайте 3 секунды, дыша спокойно.",
+          "Медленно вернитесь в нейтральное положение и отдохните.",
+          "Повторите 5 раз. Движение должно быть небольшим и безболезненным."
+        ],
+        "cues": [
+          {
+            "atSec": 0,
+            "phase": "inhale",
+            "text": "Вдох, спина в нейтральном положении"
+          },
+          {
+            "atSec": 3,
+            "phase": "squeeze",
+            "text": "Выдох — наклоните таз"
+          },
+          {
+            "atSec": 5,
+            "phase": "hold",
+            "text": "Удерживайте, дышите спокойно"
+          },
+          {
+            "atSec": 8,
+            "phase": "release",
+            "text": "Медленно вернитесь в нейтраль"
+          },
+          {
+            "atSec": 10,
+            "phase": "rest",
+            "text": "Отдых"
+          },
+          {
+            "atSec": 12,
+            "phase": "inhale",
+            "text": "Вдох, спина в нейтральном положении"
+          },
+          {
+            "atSec": 15,
+            "phase": "squeeze",
+            "text": "Выдох — наклоните таз"
+          },
+          {
+            "atSec": 17,
+            "phase": "hold",
+            "text": "Удерживайте, дышите спокойно"
+          },
+          {
+            "atSec": 20,
+            "phase": "release",
+            "text": "Медленно вернитесь в нейтраль"
+          },
+          {
+            "atSec": 22,
+            "phase": "rest",
+            "text": "Отдых"
+          },
+          {
+            "atSec": 24,
+            "phase": "inhale",
+            "text": "Вдох, спина в нейтральном положении"
+          },
+          {
+            "atSec": 27,
+            "phase": "squeeze",
+            "text": "Выдох — наклоните таз"
+          },
+          {
+            "atSec": 29,
+            "phase": "hold",
+            "text": "Удерживайте, дышите спокойно"
+          },
+          {
+            "atSec": 32,
+            "phase": "release",
+            "text": "Медленно вернитесь в нейтраль"
+          },
+          {
+            "atSec": 34,
+            "phase": "rest",
+            "text": "Отдых"
+          },
+          {
+            "atSec": 36,
+            "phase": "inhale",
+            "text": "Вдох, спина в нейтральном положении"
+          },
+          {
+            "atSec": 39,
+            "phase": "squeeze",
+            "text": "Выдох — наклоните таз"
+          },
+          {
+            "atSec": 41,
+            "phase": "hold",
+            "text": "Удерживайте, дышите спокойно"
+          },
+          {
+            "atSec": 44,
+            "phase": "release",
+            "text": "Медленно вернитесь в нейтраль"
+          },
+          {
+            "atSec": 46,
+            "phase": "rest",
+            "text": "Отдых"
+          },
+          {
+            "atSec": 48,
+            "phase": "inhale",
+            "text": "Вдох, спина в нейтральном положении"
+          },
+          {
+            "atSec": 51,
+            "phase": "squeeze",
+            "text": "Выдох — наклоните таз"
+          },
+          {
+            "atSec": 53,
+            "phase": "hold",
+            "text": "Удерживайте, дышите спокойно"
+          },
+          {
+            "atSec": 56,
+            "phase": "release",
+            "text": "Медленно вернитесь в нейтраль"
+          },
+          {
+            "atSec": 58,
+            "phase": "rest",
+            "text": "Отдых"
+          }
+        ],
+        "machineTranslated": true
+      },
+      "kk": {
+        "title": "Жамбасты еңкейту",
+        "description": "Тыныс алу, іш пен жамбас түбі бұлшықеттерінің жұмысын үйлестіретін жеңіл қимыл.",
+        "steps": [
+          "Шалқаңыздан жатып, тізеңізді бүгіңіз. Табаныңыз еденде болсын.",
+          "Дем алғанда беліңізді табиғи қалыпта ұстаңыз.",
+          "Дем шығарғанда ішіңізді жеңіл тартып, беліңізді еденге жақындатыңыз.",
+          "3 секунд ұстап, еркін тыныстаңыз.",
+          "Бастапқы қалыпқа жай оралыңыз. 5 рет қайталаңыз, ауырса тоқтаңыз."
+        ],
+        "cues": [
+          {
+            "atSec": 0,
+            "phase": "inhale",
+            "text": "Демді ішке алыңыз"
+          },
+          {
+            "atSec": 3,
+            "phase": "squeeze",
+            "text": "Дем шығарып, жамбасты еңкейтіңіз"
+          },
+          {
+            "atSec": 5,
+            "phase": "hold",
+            "text": "Ұстап тұрыңыз"
+          },
+          {
+            "atSec": 8,
+            "phase": "release",
+            "text": "Бастапқы қалыпқа оралыңыз"
+          },
+          {
+            "atSec": 10,
+            "phase": "rest",
+            "text": "Демалыңыз"
+          },
+          {
+            "atSec": 12,
+            "phase": "inhale",
+            "text": "Демді ішке алыңыз"
+          },
+          {
+            "atSec": 15,
+            "phase": "squeeze",
+            "text": "Дем шығарып, жамбасты еңкейтіңіз"
+          },
+          {
+            "atSec": 17,
+            "phase": "hold",
+            "text": "Ұстап тұрыңыз"
+          },
+          {
+            "atSec": 20,
+            "phase": "release",
+            "text": "Бастапқы қалыпқа оралыңыз"
+          },
+          {
+            "atSec": 22,
+            "phase": "rest",
+            "text": "Демалыңыз"
+          },
+          {
+            "atSec": 24,
+            "phase": "inhale",
+            "text": "Демді ішке алыңыз"
+          },
+          {
+            "atSec": 27,
+            "phase": "squeeze",
+            "text": "Дем шығарып, жамбасты еңкейтіңіз"
+          },
+          {
+            "atSec": 29,
+            "phase": "hold",
+            "text": "Ұстап тұрыңыз"
+          },
+          {
+            "atSec": 32,
+            "phase": "release",
+            "text": "Бастапқы қалыпқа оралыңыз"
+          },
+          {
+            "atSec": 34,
+            "phase": "rest",
+            "text": "Демалыңыз"
+          },
+          {
+            "atSec": 36,
+            "phase": "inhale",
+            "text": "Демді ішке алыңыз"
+          },
+          {
+            "atSec": 39,
+            "phase": "squeeze",
+            "text": "Дем шығарып, жамбасты еңкейтіңіз"
+          },
+          {
+            "atSec": 41,
+            "phase": "hold",
+            "text": "Ұстап тұрыңыз"
+          },
+          {
+            "atSec": 44,
+            "phase": "release",
+            "text": "Бастапқы қалыпқа оралыңыз"
+          },
+          {
+            "atSec": 46,
+            "phase": "rest",
+            "text": "Демалыңыз"
+          },
+          {
+            "atSec": 48,
+            "phase": "inhale",
+            "text": "Демді ішке алыңыз"
+          },
+          {
+            "atSec": 51,
+            "phase": "squeeze",
+            "text": "Дем шығарып, жамбасты еңкейтіңіз"
+          },
+          {
+            "atSec": 53,
+            "phase": "hold",
+            "text": "Ұстап тұрыңыз"
+          },
+          {
+            "atSec": 56,
+            "phase": "release",
+            "text": "Бастапқы қалыпқа оралыңыз"
+          },
+          {
+            "atSec": 58,
+            "phase": "rest",
+            "text": "Демалыңыз"
+          }
+        ],
+        "machineTranslated": false
+      },
+      "uz": {
+        "title": "Tosni egish",
+        "description": "Nafas, qorin va tos tubi mushaklarini birgalikda ishlatishni oʻrgatuvchi yumshoq harakat.",
+        "steps": [
+          "Chalqancha yoting, tizzalaringizni buking, oyoqlaringizni polga son kengligida qoʻying.",
+          "Nafas olayotganda belingiz tabiiy egilishida qolsin.",
+          "Nafas chiqarayotganda qorin mushaklarini taranglang va tosni yumshoq egib, belingizni polga yaqinlashtiring.",
+          "3 soniya ushlab turing, odatdagidek nafas oling.",
+          "Sekin neytral holatga qayting va dam oling.",
+          "5 marta takrorlang. Harakat kichik va ogʻriqsiz boʻlsin."
+        ],
+        "cues": [
+          {
+            "atSec": 0,
+            "phase": "inhale",
+            "text": "Nafas oling, bel neytral holatda"
+          },
+          {
+            "atSec": 3,
+            "phase": "squeeze",
+            "text": "Nafas chiqaring, tosni eging"
+          },
+          {
+            "atSec": 5,
+            "phase": "hold",
+            "text": "Ushlab turing, odatdagidek nafas oling"
+          },
+          {
+            "atSec": 8,
+            "phase": "release",
+            "text": "Sekin neytral holatga qayting"
+          },
+          {
+            "atSec": 10,
+            "phase": "rest",
+            "text": "Dam oling"
+          },
+          {
+            "atSec": 12,
+            "phase": "inhale",
+            "text": "Nafas oling, bel neytral holatda"
+          },
+          {
+            "atSec": 15,
+            "phase": "squeeze",
+            "text": "Nafas chiqaring, tosni eging"
+          },
+          {
+            "atSec": 17,
+            "phase": "hold",
+            "text": "Ushlab turing, odatdagidek nafas oling"
+          },
+          {
+            "atSec": 20,
+            "phase": "release",
+            "text": "Sekin neytral holatga qayting"
+          },
+          {
+            "atSec": 22,
+            "phase": "rest",
+            "text": "Dam oling"
+          },
+          {
+            "atSec": 24,
+            "phase": "inhale",
+            "text": "Nafas oling, bel neytral holatda"
+          },
+          {
+            "atSec": 27,
+            "phase": "squeeze",
+            "text": "Nafas chiqaring, tosni eging"
+          },
+          {
+            "atSec": 29,
+            "phase": "hold",
+            "text": "Ushlab turing, odatdagidek nafas oling"
+          },
+          {
+            "atSec": 32,
+            "phase": "release",
+            "text": "Sekin neytral holatga qayting"
+          },
+          {
+            "atSec": 34,
+            "phase": "rest",
+            "text": "Dam oling"
+          },
+          {
+            "atSec": 36,
+            "phase": "inhale",
+            "text": "Nafas oling, bel neytral holatda"
+          },
+          {
+            "atSec": 39,
+            "phase": "squeeze",
+            "text": "Nafas chiqaring, tosni eging"
+          },
+          {
+            "atSec": 41,
+            "phase": "hold",
+            "text": "Ushlab turing, odatdagidek nafas oling"
+          },
+          {
+            "atSec": 44,
+            "phase": "release",
+            "text": "Sekin neytral holatga qayting"
+          },
+          {
+            "atSec": 46,
+            "phase": "rest",
+            "text": "Dam oling"
+          },
+          {
+            "atSec": 48,
+            "phase": "inhale",
+            "text": "Nafas oling, bel neytral holatda"
+          },
+          {
+            "atSec": 51,
+            "phase": "squeeze",
+            "text": "Nafas chiqaring, tosni eging"
+          },
+          {
+            "atSec": 53,
+            "phase": "hold",
+            "text": "Ushlab turing, odatdagidek nafas oling"
+          },
+          {
+            "atSec": 56,
+            "phase": "release",
+            "text": "Sekin neytral holatga qayting"
+          },
+          {
+            "atSec": 58,
+            "phase": "rest",
+            "text": "Dam oling"
+          }
+        ],
+        "machineTranslated": true
+      },
+      "en": {
+        "title": "Pelvic tilt",
+        "description": "A gentle movement that teaches you to coordinate your breath, tummy and pelvic floor muscles.",
+        "steps": [
+          "Lie on your back with knees bent and feet flat on the floor, hip-width apart.",
+          "Breathe in and let your lower back keep its natural curve.",
+          "Breathe out, tighten your tummy and gently tilt your pelvis so your lower back moves toward the floor.",
+          "Hold for 3 seconds, breathing normally.",
+          "Slowly return to neutral, then rest.",
+          "Repeat 5 times. Keep the movement small and pain-free."
+        ],
+        "cues": [
+          {
+            "atSec": 0,
+            "phase": "inhale",
+            "text": "Breathe in, back in neutral"
+          },
+          {
+            "atSec": 3,
+            "phase": "squeeze",
+            "text": "Breathe out and tilt your pelvis"
+          },
+          {
+            "atSec": 5,
+            "phase": "hold",
+            "text": "Hold, breathe normally"
+          },
+          {
+            "atSec": 8,
+            "phase": "release",
+            "text": "Slowly return to neutral"
+          },
+          {
+            "atSec": 10,
+            "phase": "rest",
+            "text": "Rest"
+          },
+          {
+            "atSec": 12,
+            "phase": "inhale",
+            "text": "Breathe in, back in neutral"
+          },
+          {
+            "atSec": 15,
+            "phase": "squeeze",
+            "text": "Breathe out and tilt your pelvis"
+          },
+          {
+            "atSec": 17,
+            "phase": "hold",
+            "text": "Hold, breathe normally"
+          },
+          {
+            "atSec": 20,
+            "phase": "release",
+            "text": "Slowly return to neutral"
+          },
+          {
+            "atSec": 22,
+            "phase": "rest",
+            "text": "Rest"
+          },
+          {
+            "atSec": 24,
+            "phase": "inhale",
+            "text": "Breathe in, back in neutral"
+          },
+          {
+            "atSec": 27,
+            "phase": "squeeze",
+            "text": "Breathe out and tilt your pelvis"
+          },
+          {
+            "atSec": 29,
+            "phase": "hold",
+            "text": "Hold, breathe normally"
+          },
+          {
+            "atSec": 32,
+            "phase": "release",
+            "text": "Slowly return to neutral"
+          },
+          {
+            "atSec": 34,
+            "phase": "rest",
+            "text": "Rest"
+          },
+          {
+            "atSec": 36,
+            "phase": "inhale",
+            "text": "Breathe in, back in neutral"
+          },
+          {
+            "atSec": 39,
+            "phase": "squeeze",
+            "text": "Breathe out and tilt your pelvis"
+          },
+          {
+            "atSec": 41,
+            "phase": "hold",
+            "text": "Hold, breathe normally"
+          },
+          {
+            "atSec": 44,
+            "phase": "release",
+            "text": "Slowly return to neutral"
+          },
+          {
+            "atSec": 46,
+            "phase": "rest",
+            "text": "Rest"
+          },
+          {
+            "atSec": 48,
+            "phase": "inhale",
+            "text": "Breathe in, back in neutral"
+          },
+          {
+            "atSec": 51,
+            "phase": "squeeze",
+            "text": "Breathe out and tilt your pelvis"
+          },
+          {
+            "atSec": 53,
+            "phase": "hold",
+            "text": "Hold, breathe normally"
+          },
+          {
+            "atSec": 56,
+            "phase": "release",
+            "text": "Slowly return to neutral"
+          },
+          {
+            "atSec": 58,
+            "phase": "rest",
+            "text": "Rest"
+          }
+        ],
+        "machineTranslated": true
+      }
+    }
+  },
+  {
+    "id": "bridge",
+    "visual": "mannequin",
+    "locked": true,
+    "reviewed": false,
+    "durationSec": 70,
+    "content": {
+      "ru": {
+        "title": "Ягодичный мост",
+        "description": "Подъём таза лёжа укрепляет ягодицы и учит включать мышцы тазового дна при нагрузке.",
+        "steps": [
+          "Лягте на спину, согните колени, стопы на полу, руки вдоль тела.",
+          "Сделайте вдох, чтобы подготовиться.",
+          "На выдохе мягко сожмите мышцы тазового дна и ягодиц и поднимите таз, чтобы плечи, бёдра и колени образовали прямую линию.",
+          "Удерживайте 3 секунды, дыша спокойно.",
+          "Медленно опустите таз и отдохните.",
+          "Повторите 5 раз. Остановитесь, если почувствуете боль."
+        ],
+        "cues": [
+          {
+            "atSec": 0,
+            "phase": "inhale",
+            "text": "Вдох, подготовьтесь"
+          },
+          {
+            "atSec": 3,
+            "phase": "squeeze",
+            "text": "Выдох — сожмите и поднимите таз"
+          },
+          {
+            "atSec": 5,
+            "phase": "hold",
+            "text": "Удерживайте, дышите спокойно"
+          },
+          {
+            "atSec": 8,
+            "phase": "release",
+            "text": "Медленно опустите таз"
+          },
+          {
+            "atSec": 11,
+            "phase": "rest",
+            "text": "Отдых"
+          },
+          {
+            "atSec": 14,
+            "phase": "inhale",
+            "text": "Вдох, подготовьтесь"
+          },
+          {
+            "atSec": 17,
+            "phase": "squeeze",
+            "text": "Выдох — сожмите и поднимите таз"
+          },
+          {
+            "atSec": 19,
+            "phase": "hold",
+            "text": "Удерживайте, дышите спокойно"
+          },
+          {
+            "atSec": 22,
+            "phase": "release",
+            "text": "Медленно опустите таз"
+          },
+          {
+            "atSec": 25,
+            "phase": "rest",
+            "text": "Отдых"
+          },
+          {
+            "atSec": 28,
+            "phase": "inhale",
+            "text": "Вдох, подготовьтесь"
+          },
+          {
+            "atSec": 31,
+            "phase": "squeeze",
+            "text": "Выдох — сожмите и поднимите таз"
+          },
+          {
+            "atSec": 33,
+            "phase": "hold",
+            "text": "Удерживайте, дышите спокойно"
+          },
+          {
+            "atSec": 36,
+            "phase": "release",
+            "text": "Медленно опустите таз"
+          },
+          {
+            "atSec": 39,
+            "phase": "rest",
+            "text": "Отдых"
+          },
+          {
+            "atSec": 42,
+            "phase": "inhale",
+            "text": "Вдох, подготовьтесь"
+          },
+          {
+            "atSec": 45,
+            "phase": "squeeze",
+            "text": "Выдох — сожмите и поднимите таз"
+          },
+          {
+            "atSec": 47,
+            "phase": "hold",
+            "text": "Удерживайте, дышите спокойно"
+          },
+          {
+            "atSec": 50,
+            "phase": "release",
+            "text": "Медленно опустите таз"
+          },
+          {
+            "atSec": 53,
+            "phase": "rest",
+            "text": "Отдых"
+          },
+          {
+            "atSec": 56,
+            "phase": "inhale",
+            "text": "Вдох, подготовьтесь"
+          },
+          {
+            "atSec": 59,
+            "phase": "squeeze",
+            "text": "Выдох — сожмите и поднимите таз"
+          },
+          {
+            "atSec": 61,
+            "phase": "hold",
+            "text": "Удерживайте, дышите спокойно"
+          },
+          {
+            "atSec": 64,
+            "phase": "release",
+            "text": "Медленно опустите таз"
+          },
+          {
+            "atSec": 67,
+            "phase": "rest",
+            "text": "Отдых"
+          }
+        ],
+        "machineTranslated": true,
+        "unlockNote": "Откроется после выполнения упражнений «Медленные сокращения тазового дна» и «Наклон таза»."
+      },
+      "kk": {
+        "title": "Бөксе көпірі",
+        "description": "Жамбасты көтеру бөксе бұлшықеттерін нығайтып, жамбас түбін қимылға қосуды үйретеді.",
+        "steps": [
+          "Шалқаңыздан жатып, тізеңізді бүгіңіз. Табаныңызды еденге қойыңыз.",
+          "Демді ішке алыңыз.",
+          "Дем шығарғанда жамбас түбі мен бөксе бұлшықеттерін ақырын қысып, жамбасыңызды көтеріңіз.",
+          "3 секунд ұстап, еркін тыныстаңыз.",
+          "Жамбасыңызды жай түсіріп, демалыңыз. 5 рет қайталаңыз, ауырса тоқтаңыз."
+        ],
+        "cues": [
+          {
+            "atSec": 0,
+            "phase": "inhale",
+            "text": "Демді ішке алыңыз"
+          },
+          {
+            "atSec": 3,
+            "phase": "squeeze",
+            "text": "Қысыңыз, жамбасты көтеріңіз"
+          },
+          {
+            "atSec": 5,
+            "phase": "hold",
+            "text": "Ұстап тұрыңыз"
+          },
+          {
+            "atSec": 8,
+            "phase": "release",
+            "text": "Жамбасты түсіріңіз"
+          },
+          {
+            "atSec": 11,
+            "phase": "rest",
+            "text": "Демалыңыз"
+          },
+          {
+            "atSec": 14,
+            "phase": "inhale",
+            "text": "Демді ішке алыңыз"
+          },
+          {
+            "atSec": 17,
+            "phase": "squeeze",
+            "text": "Қысыңыз, жамбасты көтеріңіз"
+          },
+          {
+            "atSec": 19,
+            "phase": "hold",
+            "text": "Ұстап тұрыңыз"
+          },
+          {
+            "atSec": 22,
+            "phase": "release",
+            "text": "Жамбасты түсіріңіз"
+          },
+          {
+            "atSec": 25,
+            "phase": "rest",
+            "text": "Демалыңыз"
+          },
+          {
+            "atSec": 28,
+            "phase": "inhale",
+            "text": "Демді ішке алыңыз"
+          },
+          {
+            "atSec": 31,
+            "phase": "squeeze",
+            "text": "Қысыңыз, жамбасты көтеріңіз"
+          },
+          {
+            "atSec": 33,
+            "phase": "hold",
+            "text": "Ұстап тұрыңыз"
+          },
+          {
+            "atSec": 36,
+            "phase": "release",
+            "text": "Жамбасты түсіріңіз"
+          },
+          {
+            "atSec": 39,
+            "phase": "rest",
+            "text": "Демалыңыз"
+          },
+          {
+            "atSec": 42,
+            "phase": "inhale",
+            "text": "Демді ішке алыңыз"
+          },
+          {
+            "atSec": 45,
+            "phase": "squeeze",
+            "text": "Қысыңыз, жамбасты көтеріңіз"
+          },
+          {
+            "atSec": 47,
+            "phase": "hold",
+            "text": "Ұстап тұрыңыз"
+          },
+          {
+            "atSec": 50,
+            "phase": "release",
+            "text": "Жамбасты түсіріңіз"
+          },
+          {
+            "atSec": 53,
+            "phase": "rest",
+            "text": "Демалыңыз"
+          },
+          {
+            "atSec": 56,
+            "phase": "inhale",
+            "text": "Демді ішке алыңыз"
+          },
+          {
+            "atSec": 59,
+            "phase": "squeeze",
+            "text": "Қысыңыз, жамбасты көтеріңіз"
+          },
+          {
+            "atSec": 61,
+            "phase": "hold",
+            "text": "Ұстап тұрыңыз"
+          },
+          {
+            "atSec": 64,
+            "phase": "release",
+            "text": "Жамбасты түсіріңіз"
+          },
+          {
+            "atSec": 67,
+            "phase": "rest",
+            "text": "Демалыңыз"
+          }
+        ],
+        "machineTranslated": false,
+        "unlockNote": "«Жамбас түбі бұлшықеттерін баяу жиыру» және «Жамбасты еңкейту» жаттығуларын аяқтаған соң ашылады."
+      },
+      "uz": {
+        "title": "Koʻprik",
+        "description": "Yotgan holda tosni koʻtarish dumba mushaklarini mustahkamlaydi va yuklama paytida tos tubi mushaklarini ishlatishni oʻrgatadi.",
+        "steps": [
+          "Chalqancha yoting, tizzalaringizni buking, oyoqlaringiz polda, qoʻllaringiz tanangiz yonida boʻlsin.",
+          "Tayyorlanish uchun nafas oling.",
+          "Nafas chiqarayotganda tos tubi va dumba mushaklarini yumshoq qising va yelka, son va tizzalar bir chiziqda boʻlguncha tosni koʻtaring.",
+          "3 soniya ushlab turing, odatdagidek nafas oling.",
+          "Tosni sekin tushiring va dam oling.",
+          "5 marta takrorlang. Ogʻriq sezsangiz, toʻxtating."
+        ],
+        "cues": [
+          {
+            "atSec": 0,
+            "phase": "inhale",
+            "text": "Nafas oling, tayyorlaning"
+          },
+          {
+            "atSec": 3,
+            "phase": "squeeze",
+            "text": "Nafas chiqaring, qising va tosni koʻtaring"
+          },
+          {
+            "atSec": 5,
+            "phase": "hold",
+            "text": "Ushlab turing, odatdagidek nafas oling"
+          },
+          {
+            "atSec": 8,
+            "phase": "release",
+            "text": "Tosni sekin tushiring"
+          },
+          {
+            "atSec": 11,
+            "phase": "rest",
+            "text": "Dam oling"
+          },
+          {
+            "atSec": 14,
+            "phase": "inhale",
+            "text": "Nafas oling, tayyorlaning"
+          },
+          {
+            "atSec": 17,
+            "phase": "squeeze",
+            "text": "Nafas chiqaring, qising va tosni koʻtaring"
+          },
+          {
+            "atSec": 19,
+            "phase": "hold",
+            "text": "Ushlab turing, odatdagidek nafas oling"
+          },
+          {
+            "atSec": 22,
+            "phase": "release",
+            "text": "Tosni sekin tushiring"
+          },
+          {
+            "atSec": 25,
+            "phase": "rest",
+            "text": "Dam oling"
+          },
+          {
+            "atSec": 28,
+            "phase": "inhale",
+            "text": "Nafas oling, tayyorlaning"
+          },
+          {
+            "atSec": 31,
+            "phase": "squeeze",
+            "text": "Nafas chiqaring, qising va tosni koʻtaring"
+          },
+          {
+            "atSec": 33,
+            "phase": "hold",
+            "text": "Ushlab turing, odatdagidek nafas oling"
+          },
+          {
+            "atSec": 36,
+            "phase": "release",
+            "text": "Tosni sekin tushiring"
+          },
+          {
+            "atSec": 39,
+            "phase": "rest",
+            "text": "Dam oling"
+          },
+          {
+            "atSec": 42,
+            "phase": "inhale",
+            "text": "Nafas oling, tayyorlaning"
+          },
+          {
+            "atSec": 45,
+            "phase": "squeeze",
+            "text": "Nafas chiqaring, qising va tosni koʻtaring"
+          },
+          {
+            "atSec": 47,
+            "phase": "hold",
+            "text": "Ushlab turing, odatdagidek nafas oling"
+          },
+          {
+            "atSec": 50,
+            "phase": "release",
+            "text": "Tosni sekin tushiring"
+          },
+          {
+            "atSec": 53,
+            "phase": "rest",
+            "text": "Dam oling"
+          },
+          {
+            "atSec": 56,
+            "phase": "inhale",
+            "text": "Nafas oling, tayyorlaning"
+          },
+          {
+            "atSec": 59,
+            "phase": "squeeze",
+            "text": "Nafas chiqaring, qising va tosni koʻtaring"
+          },
+          {
+            "atSec": 61,
+            "phase": "hold",
+            "text": "Ushlab turing, odatdagidek nafas oling"
+          },
+          {
+            "atSec": 64,
+            "phase": "release",
+            "text": "Tosni sekin tushiring"
+          },
+          {
+            "atSec": 67,
+            "phase": "rest",
+            "text": "Dam oling"
+          }
+        ],
+        "machineTranslated": true,
+        "unlockNote": "“Tos tubi mushaklarini sekin qisish” va “Tosni egish” mashqlarini bajargandan soʻng ochiladi."
+      },
+      "en": {
+        "title": "Glute bridge",
+        "description": "Lifting your hips while lying down strengthens the glutes and teaches you to engage the pelvic floor under load.",
+        "steps": [
+          "Lie on your back with knees bent, feet flat on the floor and arms by your sides.",
+          "Breathe in to prepare.",
+          "Breathe out, gently squeeze your pelvic floor and glutes, and lift your hips until your shoulders, hips and knees form a straight line.",
+          "Hold for 3 seconds, breathing normally.",
+          "Slowly lower your hips, then rest.",
+          "Repeat 5 times. Stop if you feel pain."
+        ],
+        "cues": [
+          {
+            "atSec": 0,
+            "phase": "inhale",
+            "text": "Breathe in to prepare"
+          },
+          {
+            "atSec": 3,
+            "phase": "squeeze",
+            "text": "Breathe out, squeeze and lift"
+          },
+          {
+            "atSec": 5,
+            "phase": "hold",
+            "text": "Hold, breathe normally"
+          },
+          {
+            "atSec": 8,
+            "phase": "release",
+            "text": "Slowly lower your hips"
+          },
+          {
+            "atSec": 11,
+            "phase": "rest",
+            "text": "Rest"
+          },
+          {
+            "atSec": 14,
+            "phase": "inhale",
+            "text": "Breathe in to prepare"
+          },
+          {
+            "atSec": 17,
+            "phase": "squeeze",
+            "text": "Breathe out, squeeze and lift"
+          },
+          {
+            "atSec": 19,
+            "phase": "hold",
+            "text": "Hold, breathe normally"
+          },
+          {
+            "atSec": 22,
+            "phase": "release",
+            "text": "Slowly lower your hips"
+          },
+          {
+            "atSec": 25,
+            "phase": "rest",
+            "text": "Rest"
+          },
+          {
+            "atSec": 28,
+            "phase": "inhale",
+            "text": "Breathe in to prepare"
+          },
+          {
+            "atSec": 31,
+            "phase": "squeeze",
+            "text": "Breathe out, squeeze and lift"
+          },
+          {
+            "atSec": 33,
+            "phase": "hold",
+            "text": "Hold, breathe normally"
+          },
+          {
+            "atSec": 36,
+            "phase": "release",
+            "text": "Slowly lower your hips"
+          },
+          {
+            "atSec": 39,
+            "phase": "rest",
+            "text": "Rest"
+          },
+          {
+            "atSec": 42,
+            "phase": "inhale",
+            "text": "Breathe in to prepare"
+          },
+          {
+            "atSec": 45,
+            "phase": "squeeze",
+            "text": "Breathe out, squeeze and lift"
+          },
+          {
+            "atSec": 47,
+            "phase": "hold",
+            "text": "Hold, breathe normally"
+          },
+          {
+            "atSec": 50,
+            "phase": "release",
+            "text": "Slowly lower your hips"
+          },
+          {
+            "atSec": 53,
+            "phase": "rest",
+            "text": "Rest"
+          },
+          {
+            "atSec": 56,
+            "phase": "inhale",
+            "text": "Breathe in to prepare"
+          },
+          {
+            "atSec": 59,
+            "phase": "squeeze",
+            "text": "Breathe out, squeeze and lift"
+          },
+          {
+            "atSec": 61,
+            "phase": "hold",
+            "text": "Hold, breathe normally"
+          },
+          {
+            "atSec": 64,
+            "phase": "release",
+            "text": "Slowly lower your hips"
+          },
+          {
+            "atSec": 67,
+            "phase": "rest",
+            "text": "Rest"
+          }
+        ],
+        "machineTranslated": true,
+        "unlockNote": "Unlocks after you complete “Slow pelvic floor squeezes” and “Pelvic tilt”."
+      }
+    }
+  }
+]
