@@ -1,6 +1,11 @@
 {
   "exercises": {
     "machineTranslated": false,
+    "common": {
+      "sourceBadge": "NHS және POGP ұсынымдары негізінде",
+      "reviewPlanned": "маман тексеруі жоспарланған",
+      "locked": "Жабық"
+    },
     "player": {
       "play": "Бастау",
       "pause": "Үзіліс",
@@ -10,14 +15,21 @@
       "progress": "TODO_KK",
       "loading": "TODO_KK",
       "finished": "Жарайсыз! Жаттығу аяқталды",
-      "sourceBadge": "NHS және POGP ұсынымдары негізінде",
-      "reviewPlanned": "маман тексеруі жоспарланған",
-      "locked": "Жабық",
       "steps": "TODO_KK",
       "noWebgl": "3D көрсету мүмкін емес. Төмендегі нұсқаулықты орындаңыз.",
       "notFound": "TODO_KK",
       "visualHammock": "TODO_KK",
       "visualMannequin": "TODO_KK"
+    },
+    "catalog": {
+      "title": "TODO_KK",
+      "loading": "TODO_KK",
+      "loadError": "TODO_KK",
+      "retry": "TODO_KK",
+      "duration": "TODO_KK"
+    },
+    "detail": {
+      "back": "TODO_KK"
     }
   }
 }

@@ -35,3 +35,15 @@ export interface Exercise {
   durationSec: number;
   content: Record<Locale, ExerciseContent>;
 }
+
+/** One exercise with the text for a single locale, as the API returns it. */
+export type LocalizedExercise = Omit<Exercise, 'content'> & ExerciseContent;
+
+/**
+ * PROVISIONAL response of GET /api/exercises?locale=xx.
+ * Not taken from docs/API_CONTRACTS.md (not available yet); align when it arrives.
+ */
+export interface ExerciseListResponse {
+  locale: Locale;
+  items: LocalizedExercise[];
+}

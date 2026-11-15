@@ -1,6 +1,11 @@
 {
   "exercises": {
     "machineTranslated": true,
+    "common": {
+      "sourceBadge": "Based on NHS and POGP guidance",
+      "reviewPlanned": "Specialist review planned",
+      "locked": "Locked"
+    },
     "player": {
       "play": "Play",
       "pause": "Pause",
@@ -10,14 +15,21 @@
       "progress": "Exercise progress",
       "loading": "Loading 3D view…",
       "finished": "Exercise complete",
-      "sourceBadge": "Based on NHS and POGP guidance",
-      "reviewPlanned": "Specialist review planned",
-      "locked": "Locked",
       "steps": "Steps",
       "noWebgl": "3D view is not available. Follow the steps below.",
       "notFound": "Exercise not found.",
       "visualHammock": "Pelvic floor muscles shown as a hammock",
       "visualMannequin": "Figure doing the exercise"
+    },
+    "catalog": {
+      "title": "Exercises",
+      "loading": "Loading exercises…",
+      "loadError": "Could not load exercises.",
+      "retry": "Try again",
+      "duration": "Duration"
+    },
+    "detail": {
+      "back": "Back to exercises"
     }
   }
 }

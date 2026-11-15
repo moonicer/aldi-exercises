@@ -1,6 +1,11 @@
 {
   "exercises": {
     "machineTranslated": true,
+    "common": {
+      "sourceBadge": "NHS va POGP tavsiyalari asosida",
+      "reviewPlanned": "Mutaxassis tekshiruvi rejalashtirilgan",
+      "locked": "Yopiq"
+    },
     "player": {
       "play": "Boshlash",
       "pause": "Pauza",
@@ -10,14 +15,21 @@
       "progress": "Mashq jarayoni",
       "loading": "3D yuklanmoqda…",
       "finished": "Mashq tugadi",
-      "sourceBadge": "NHS va POGP tavsiyalari asosida",
-      "reviewPlanned": "Mutaxassis tekshiruvi rejalashtirilgan",
-      "locked": "Yopiq",
       "steps": "Qadamlar",
       "noWebgl": "3D koʻrinish mavjud emas. Quyidagi qadamlarni bajaring.",
       "notFound": "Mashq topilmadi.",
       "visualHammock": "Tos tubi mushaklari gamak koʻrinishida",
       "visualMannequin": "Mashqni bajarayotgan figura"
+    },
+    "catalog": {
+      "title": "Mashqlar",
+      "loading": "Mashqlar yuklanmoqda…",
+      "loadError": "Mashqlarni yuklab boʻlmadi.",
+      "retry": "Qayta urinish",
+      "duration": "Davomiyligi"
+    },
+    "detail": {
+      "back": "Mashqlarga qaytish"
     }
   }
 }

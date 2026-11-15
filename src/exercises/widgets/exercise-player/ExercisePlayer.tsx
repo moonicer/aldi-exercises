@@ -1,6 +1,6 @@
 import { lazy, memo, Suspense, useState } from 'react';
-import { getExercise, type CuePhase, type Exercise, type ExerciseId, type Locale } from '../../../entities/exercise';
-import { playerT, type PlayerT } from './i18n';
+import type { CuePhase, ExerciseId, LocalizedExercise } from '../../../entities/exercise';
+import { useExercisesT, type ExercisesT } from '../../shared/i18n';
 import { liftForPhase, progressForPhase } from './phaseLift';
 import { cueIndexAt, repetitionAt } from './timeline';
 import { useTimelineClock } from './useTimelineClock';
@@ -12,7 +12,7 @@ import './ExercisePlayer.css';
 const Hammock = lazy(() => import('./Hammock').then((m) => ({ default: m.Hammock })));
 const Mannequin = lazy(() => import('./Mannequin').then((m) => ({ default: m.Mannequin })));
 
-type T = PlayerT;
+type T = ExercisesT;
 
 function detectWebGL(): boolean {
   try {
@@ -30,8 +30,8 @@ function isMannequinExercise(id: ExerciseId): id is MannequinExercise {
 function Steps({ steps, t, notice }: { steps: string[]; t: T; notice?: boolean }) {
   return (
     <div className="player__steps">
-      {notice && <p className="player__notice">{t('noWebgl')}</p>}
-      <h3>{t('steps')}</h3>
+      {notice && <p className="player__notice">{t('player.noWebgl')}</p>}
+      <h3>{t('player.steps')}</h3>
       <ol>
         {steps.map((s, i) => (
           <li key={i}>{s}</li>
@@ -42,17 +42,15 @@ function Steps({ steps, t, notice }: { steps: string[]; t: T; notice?: boolean }
 }
 
 interface VisualProps {
-  exercise: Exercise;
+  exercise: LocalizedExercise;
   phase: CuePhase | null;
   paused: boolean;
-  /** Stable reference (from the JSON), used for the no-WebGL canvas fallback. */
-  steps: string[];
   t: T;
 }
 
 /** Memoized so the clock's frequent re-renders don't touch the canvas unless the phase changes. */
-const Visual = memo(function Visual({ exercise, phase, paused, steps, t }: VisualProps) {
-  const fallback = <Steps steps={steps} t={t} notice />;
+const Visual = memo(function Visual({ exercise, phase, paused, t }: VisualProps) {
+  const fallback = <Steps steps={exercise.steps} t={t} notice />;
   if (exercise.visual === 'mannequin' && isMannequinExercise(exercise.id)) {
     return (
       <Mannequin
@@ -60,7 +58,7 @@ const Visual = memo(function Visual({ exercise, phase, paused, steps, t }: Visua
         exercise={exercise.id}
         progress={phase ? progressForPhase(phase) : 0}
         paused={paused}
-        label={t('visualMannequin')}
+        label={t('player.visualMannequin')}
         fallback={fallback}
       />
     );
@@ -70,30 +68,27 @@ const Visual = memo(function Visual({ exercise, phase, paused, steps, t }: Visua
       className="player__canvas"
       lift={phase ? liftForPhase(phase) : 0}
       paused={paused}
-      label={t('visualHammock')}
+      label={t('player.visualHammock')}
       fallback={fallback}
     />
   );
 });
 
-function Header({ exercise, title, t }: { exercise: Exercise; title: string; t: T }) {
+function Header({ title, t }: { title: string; t: T }) {
   return (
     <header className="player__header">
       <h2>{title}</h2>
-      <span className="player__badge">{t('sourceBadge')}</span>
-      {/* Until specialists review the content. Moves to the catalog page once it exists. */}
-      {!exercise.reviewed && <p className="player__review-note">{t('reviewPlanned')}</p>}
+      <span className="player__badge">{t('common.sourceBadge')}</span>
     </header>
   );
 }
 
-function PlayerBody({ exercise, locale }: { exercise: Exercise; locale: Locale }) {
-  const t = playerT(locale);
-  const content = exercise.content[locale];
+function PlayerBody({ exercise }: { exercise: LocalizedExercise }) {
+  const t = useExercisesT();
   const [webgl] = useState(detectWebGL);
   const clock = useTimelineClock(exercise.durationSec);
 
-  const { cues, steps } = content;
+  const { cues, steps } = exercise;
   const index = cueIndexAt(cues, clock.elapsed);
   const cue = cues[index];
   const rep = repetitionAt(cues, index);
@@ -101,24 +96,23 @@ function PlayerBody({ exercise, locale }: { exercise: Exercise; locale: Locale }
   const percent = Math.round((clock.elapsed / exercise.durationSec) * 100);
 
   // Before start the first instruction is shown so the user knows what's coming.
-  const cueText = clock.status === 'finished' ? t('finished') : (cue?.text ?? '');
+  const cueText = clock.status === 'finished' ? t('player.finished') : (cue?.text ?? '');
   const mainLabel =
-    clock.status === 'running' ? t('pause') : clock.status === 'paused' ? t('resume') : t('play');
+    clock.status === 'running' ? t('player.pause') : clock.status === 'paused' ? t('player.resume') : t('player.play');
   const textSteps = <Steps steps={steps} t={t} notice />;
 
   return (
     <section className="player">
-      <Header exercise={exercise} title={content.title} t={t} />
+      <Header title={exercise.title} t={t} />
 
       <div className="player__stage">
         {webgl ? (
           <WebGLBoundary fallback={textSteps}>
-            <Suspense fallback={<div className="player__loading">{t('loading')}</div>}>
+            <Suspense fallback={<div className="player__loading">{t('player.loading')}</div>}>
               <Visual
                 exercise={exercise}
                 phase={active ? (cue?.phase ?? null) : null}
                 paused={clock.status === 'paused'}
-                steps={steps}
                 t={t}
               />
             </Suspense>
@@ -136,7 +130,7 @@ function PlayerBody({ exercise, locale }: { exercise: Exercise; locale: Locale }
         <div
           className="player__progress"
           role="progressbar"
-          aria-label={t('progress')}
+          aria-label={t('player.progress')}
           aria-valuemin={0}
           aria-valuemax={100}
           aria-valuenow={percent}
@@ -147,7 +141,7 @@ function PlayerBody({ exercise, locale }: { exercise: Exercise; locale: Locale }
           <span aria-hidden="true">
             {rep.current} / {rep.total}
           </span>
-          <span className="visually-hidden">{t('repetition', rep)}</span>
+          <span className="visually-hidden">{t('player.repetition', rep)}</span>
         </p>
       </div>
 
@@ -160,44 +154,36 @@ function PlayerBody({ exercise, locale }: { exercise: Exercise; locale: Locale }
           {mainLabel}
         </button>
         <button type="button" className="player__button" onClick={clock.replay}>
-          {t('replay')}
+          {t('player.replay')}
         </button>
       </div>
-
     </section>
   );
 }
 
-function LockedBody({ exercise, locale }: { exercise: Exercise; locale: Locale }) {
-  const t = playerT(locale);
-  const content = exercise.content[locale];
+function LockedBody({ exercise }: { exercise: LocalizedExercise }) {
+  const t = useExercisesT();
   return (
     <section className="player player--locked">
-      <Header exercise={exercise} title={content.title} t={t} />
+      <Header title={exercise.title} t={t} />
       <div className="player__locked">
         <p className="player__locked-label">
           <span aria-hidden="true">🔒 </span>
-          {t('locked')}
+          {t('common.locked')}
         </p>
-        {content.unlockNote && <p>{content.unlockNote}</p>}
+        {exercise.unlockNote && <p>{exercise.unlockNote}</p>}
       </div>
     </section>
   );
 }
 
 export interface ExercisePlayerProps {
-  exerciseId: ExerciseId;
-  locale: Locale;
+  /** Already localized (from the API); the UI language comes from useLocale(). */
+  exercise: LocalizedExercise;
 }
 
-export function ExercisePlayer({ exerciseId, locale }: ExercisePlayerProps) {
-  const exercise = getExercise(exerciseId);
-  if (!exercise) {
-    return <p role="alert">{playerT(locale)('notFound')}</p>;
-  }
-  if (exercise.locked) {
-    return <LockedBody exercise={exercise} locale={locale} />;
-  }
+export function ExercisePlayer({ exercise }: ExercisePlayerProps) {
+  if (exercise.locked) return <LockedBody exercise={exercise} />;
   // key: a new exercise starts with a fresh clock and a fresh error boundary.
-  return <PlayerBody key={exercise.id} exercise={exercise} locale={locale} />;
+  return <PlayerBody key={exercise.id} exercise={exercise} />;
 }
