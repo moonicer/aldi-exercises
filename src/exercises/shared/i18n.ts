@@ -23,7 +23,7 @@ const cache = new Map<Locale, ExercisesT>();
 
 /**
  * Stable translate function per locale for `exercises.*` strings, with {var} substitution.
- * Values are shown as-is (kk "TODO_KK" placeholders included) so nothing is silently rewritten.
+ * Values are shown as-is (including untranslated kk placeholders) so nothing is silently rewritten.
  */
 export function exercisesT(locale: Locale): ExercisesT {
   let t = cache.get(locale);

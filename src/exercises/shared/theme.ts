@@ -14,7 +14,7 @@ export const color = {
   text: '#2F6A96',
   primary: '#7A64B8',
   textOnPrimary: '#FFFFFF',
-  focusRing: '#E9A07A',
+  focusRing: '#7A64B8',
 
   // 3D scenes
   sceneBackground: '#FBF9F4',
