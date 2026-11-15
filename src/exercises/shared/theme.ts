@@ -5,23 +5,23 @@
  */
 export const color = {
   // Page and surfaces
-  background: '#FBF5EE',
+  background: '#FBF9F4',
   surface: '#FFF8F1',
   surfaceRaised: '#FFFFFF',
   track: '#E6DCCF',
 
   // Text and interactive
   text: '#1E5B57',
-  primary: '#1E5B57',
+  primary: '#7A64B8',
   textOnPrimary: '#FFFFFF',
   focusRing: '#E9A07A',
 
   // 3D scenes
-  sceneBackground: '#FBF5EE',
+  sceneBackground: '#FBF9F4',
   hammockRelaxed: '#DCD0F5',
   hammockLifted: '#7A64B8',
   hammockOutline: '#1E5B57',
-  pelvis: '#1E5B57',
+  pelvis: '#2F6A96',
   mannequin: '#A8C3A0',
   mat: '#EADCCB',
 } as const;

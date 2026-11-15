@@ -3,8 +3,7 @@ import { ExercisePlayer } from './exercises/widgets/exercise-player/ExercisePlay
 function App() {
   return (
     <main className="app">
-      {/* TODO: remove `debug` once timing is verified. */}
-      <ExercisePlayer exerciseId="pf-slow" locale="kk" debug />
+      <ExercisePlayer exerciseId="pf-slow" locale="kk" />
     </main>
   )
 }

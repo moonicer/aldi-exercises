@@ -27,6 +27,13 @@
   border-radius: 999px;
 }
 
+.player__review-note {
+  flex-basis: 100%;
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.85;
+}
+
 .player__stage {
   min-height: 400px;
   border-radius: 16px;
@@ -163,11 +170,4 @@
   .player__progress-fill {
     transition: none;
   }
-}
-
-/* Temporary dev aid (debug prop). */
-.player__debug {
-  margin: 0;
-  font: 16px/1.4 ui-monospace, Consolas, monospace;
-  opacity: 0.75;
 }

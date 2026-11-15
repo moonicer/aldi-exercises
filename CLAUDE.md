@@ -8,7 +8,9 @@ all geometry is procedural. Must run at 30+ fps on a mid-range Android phone.
 
 Content: Kazakh (kk) text is written by a native speaker. NEVER rewrite or "fix" kk strings.
 ru/en/uz are drafts: mark machineTranslated: true. uz uses Latin script (oʻ, gʻ).
-All exercises have reviewed: false and show a "demo, not specialist-reviewed" badge.
+All exercises have reviewed: false. Each shows the badge "Based on NHS and POGP guidance";
+while reviewed is false a small "specialist review planned" line is shown (in the player
+until the catalog page exists, then on the catalog page instead).
 
 Behaviour: play / pause / replay; breathing cue text always visible (works without sound);
 cues stay in sync after pause; if WebGL fails, show the text steps instead.

@@ -80,12 +80,14 @@ function Header({ exercise, title, t }: { exercise: Exercise; title: string; t: 
   return (
     <header className="player__header">
       <h2>{title}</h2>
-      {!exercise.reviewed && <span className="player__badge">{t('demoBadge')}</span>}
+      <span className="player__badge">{t('sourceBadge')}</span>
+      {/* Until specialists review the content. Moves to the catalog page once it exists. */}
+      {!exercise.reviewed && <p className="player__review-note">{t('reviewPlanned')}</p>}
     </header>
   );
 }
 
-function PlayerBody({ exercise, locale, debug }: { exercise: Exercise; locale: Locale; debug: boolean }) {
+function PlayerBody({ exercise, locale }: { exercise: Exercise; locale: Locale }) {
   const t = playerT(locale);
   const content = exercise.content[locale];
   const [webgl] = useState(detectWebGL);
@@ -162,11 +164,6 @@ function PlayerBody({ exercise, locale, debug }: { exercise: Exercise; locale: L
         </button>
       </div>
 
-      {debug && (
-        <p className="player__debug">
-          t={clock.elapsed.toFixed(1)}s · phase={cue?.phase ?? '-'} · rep={rep.current}/{rep.total} · {clock.status}
-        </p>
-      )}
     </section>
   );
 }
@@ -191,11 +188,9 @@ function LockedBody({ exercise, locale }: { exercise: Exercise; locale: Locale }
 export interface ExercisePlayerProps {
   exerciseId: ExerciseId;
   locale: Locale;
-  /** Temporary dev aid: shows time, phase and repetition under the controls. */
-  debug?: boolean;
 }
 
-export function ExercisePlayer({ exerciseId, locale, debug = false }: ExercisePlayerProps) {
+export function ExercisePlayer({ exerciseId, locale }: ExercisePlayerProps) {
   const exercise = getExercise(exerciseId);
   if (!exercise) {
     return <p role="alert">{playerT(locale)('notFound')}</p>;
@@ -204,5 +199,5 @@ export function ExercisePlayer({ exerciseId, locale, debug = false }: ExercisePl
     return <LockedBody exercise={exercise} locale={locale} />;
   }
   // key: a new exercise starts with a fresh clock and a fresh error boundary.
-  return <PlayerBody key={exercise.id} exercise={exercise} locale={locale} debug={debug} />;
+  return <PlayerBody key={exercise.id} exercise={exercise} locale={locale} />;
 }
