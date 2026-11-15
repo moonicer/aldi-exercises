@@ -8,16 +8,18 @@ const SETTLE_EPS = 0.0005;
 /**
  * Eases a value toward `target` inside an on-demand (frameloop="demand") Canvas.
  * Calls `apply` with the eased value only while it is moving, then lets the loop sleep.
+ * While `paused`, the value freezes where it is.
  * Returns a ref holding the current eased value (starts at the first `target`).
  */
-export function useEased(target: number, apply: (value: number) => void) {
+export function useEased(target: number, apply: (value: number) => void, paused = false) {
   const invalidate = useThree((s) => s.invalidate);
   const current = useRef(target);
 
-  // New target: wake the render loop.
-  useEffect(() => invalidate(), [target, invalidate]);
+  // New target or resumed: wake the render loop.
+  useEffect(() => invalidate(), [target, paused, invalidate]);
 
   useFrame((_, delta) => {
+    if (paused) return; // freeze mid-motion; resumes from the same value
     const diff = target - current.current;
     if (Math.abs(diff) < SETTLE_EPS) return;
     const dt = Math.min(delta, 0.1); // avoid jumps after a background tab

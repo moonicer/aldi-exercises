@@ -1,0 +1,22 @@
+{
+  "exercises": {
+    "machineTranslated": true,
+    "player": {
+      "play": "Старт",
+      "pause": "Пауза",
+      "resume": "Продолжить",
+      "replay": "Сначала",
+      "repetition": "Повтор {current} из {total}",
+      "progress": "Ход упражнения",
+      "loading": "Загрузка 3D…",
+      "finished": "Упражнение завершено",
+      "demoBadge": "Демо, не проверено специалистом",
+      "locked": "Заблокировано",
+      "steps": "Шаги",
+      "noWebgl": "3D-вид недоступен. Следуйте шагам ниже.",
+      "notFound": "Упражнение не найдено.",
+      "visualHammock": "Мышцы тазового дна в виде гамака",
+      "visualMannequin": "Фигура, выполняющая упражнение"
+    }
+  }
+}

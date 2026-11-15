@@ -1,0 +1,22 @@
+{
+  "exercises": {
+    "machineTranslated": true,
+    "player": {
+      "play": "Boshlash",
+      "pause": "Pauza",
+      "resume": "Davom ettirish",
+      "replay": "Qaytadan",
+      "repetition": "Takrorlash: {current} / {total}",
+      "progress": "Mashq jarayoni",
+      "loading": "3D yuklanmoqda…",
+      "finished": "Mashq tugadi",
+      "demoBadge": "Demo, mutaxassis tomonidan tekshirilmagan",
+      "locked": "Yopiq",
+      "steps": "Qadamlar",
+      "noWebgl": "3D koʻrinish mavjud emas. Quyidagi qadamlarni bajaring.",
+      "notFound": "Mashq topilmadi.",
+      "visualHammock": "Tos tubi mushaklari gamak koʻrinishida",
+      "visualMannequin": "Mashqni bajarayotgan figura"
+    }
+  }
+}

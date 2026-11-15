@@ -61,19 +61,60 @@ function shapeSurface(g: THREE.BufferGeometry, lift: number) {
   g.computeVertexNormals();
 }
 
-/** A pelvic bone drawn as a simple arc; side -1 = left "(", 1 = right ")". */
-function Bone({ side }: { side: -1 | 1 }) {
-  const arc = THREE.MathUtils.degToRad(160);
-  const start = side === 1 ? THREE.MathUtils.degToRad(-80) : THREE.MathUtils.degToRad(100);
+/*
+ * Pelvis sides: a thick curved wall on each side, like the inner bowl of the pelvis.
+ * Cross-section (front view) is a ring segment; it is extruded along z through the
+ * hammock's full depth. The inner face passes just outside the hammock's side edge,
+ * so the edge is buried in the wall and the hammock visibly hangs between the sides.
+ */
+const PELVIS = {
+  innerR: 0.35,
+  outerR: 0.52,
+  from: THREE.MathUtils.degToRad(-75), // bottom of the wall
+  to: THREE.MathUtils.degToRad(65), // top of the wall
+  anchorAngle: THREE.MathUtils.degToRad(-25), // where the hammock edge meets the inner face
+  embed: 0.04, // how far the hammock edge sinks into the wall
+  bevel: 0.04,
+};
+// Centre of the right-hand ring so that its inner face meets the hammock edge.
+const PELVIS_CX = W - PELVIS.embed - PELVIS.innerR * Math.cos(PELVIS.anchorAngle);
+const PELVIS_CY = END_Y - PELVIS.innerR * Math.sin(PELVIS.anchorAngle);
+
+function createPelvisSideGeometry() {
+  const { innerR, outerR, from, to, bevel } = PELVIS;
+  const shape = new THREE.Shape();
+  shape.absarc(PELVIS_CX, PELVIS_CY, outerR, from, to, false);
+  shape.absarc(PELVIS_CX, PELVIS_CY, innerR, to, from, true);
+  shape.closePath();
+  const depth = 2 * D + 0.1;
+  const g = new THREE.ExtrudeGeometry(shape, {
+    depth,
+    curveSegments: 32,
+    bevelEnabled: true,
+    bevelThickness: bevel,
+    bevelSize: bevel,
+    bevelSegments: 3,
+  });
+  g.translate(0, 0, -depth / 2);
+  return g;
+}
+
+/** Both pelvis sides; the left one is the right one mirrored. */
+function PelvisSides() {
+  const geometry = useMemo(() => createPelvisSideGeometry(), []);
+  useEffect(() => () => geometry.dispose(), [geometry]);
   return (
-    <mesh position={[side * 1.0, 0.25, 0]} rotation={[0, 0, start]}>
-      <torusGeometry args={[0.5, 0.06, 12, 48, arc]} />
-      <meshStandardMaterial color={COLORS.outline} roughness={0.6} />
-    </mesh>
+    <>
+      {([-1, 1] as const).map((side) => (
+        <mesh key={side} geometry={geometry} scale={[side, 1, 1]}>
+          <meshStandardMaterial color={COLORS.outline} roughness={0.6} />
+        </mesh>
+      ))}
+    </>
   );
 }
 
-function HammockScene({ lift }: { lift: number }) {
+function HammockScene({ lift, paused }: { lift: number; paused: boolean }) {
   const target = clamp01(lift);
   // Lift at mount; the geometry and rim are shaped for it before the first frame.
   const [initialLift] = useState(target);
@@ -92,7 +133,7 @@ function HammockScene({ lift }: { lift: number }) {
   useEased(target, (l) => {
     shapeSurface(geometry, l);
     rimRef.current?.geometry.setPositions(rimPositions(l));
-  });
+  }, paused);
 
   return (
     <>
@@ -101,8 +142,7 @@ function HammockScene({ lift }: { lift: number }) {
       <directionalLight position={[2, 4, 3]} intensity={1.4} />
       <directionalLight position={[-3, 2, -2]} intensity={0.4} />
 
-      <Bone side={-1} />
-      <Bone side={1} />
+      <PelvisSides />
 
       <mesh geometry={geometry}>
         <meshStandardMaterial color={COLORS.surface} roughness={0.85} side={THREE.DoubleSide} />
@@ -115,6 +155,8 @@ function HammockScene({ lift }: { lift: number }) {
 export interface HammockProps {
   /** 0 = relaxed, 1 = lifted. The surface eases toward this value. */
   lift: number;
+  /** Freezes the motion where it is (e.g. while the player is paused). */
+  paused?: boolean;
   /** Accessible description of the illustration. */
   label: string;
   className?: string;
@@ -122,7 +164,7 @@ export interface HammockProps {
   fallback?: ReactNode;
 }
 
-export function Hammock({ lift, label, className, fallback }: HammockProps) {
+export function Hammock({ lift, paused = false, label, className, fallback }: HammockProps) {
   return (
     <div className={className} role="img" aria-label={label} style={{ background: COLORS.background }}>
       <Canvas
@@ -132,7 +174,7 @@ export function Hammock({ lift, label, className, fallback }: HammockProps) {
         onCreated={({ camera }) => camera.lookAt(0, -0.05, 0)}
         fallback={fallback}
       >
-        <HammockScene lift={lift} />
+        <HammockScene lift={lift} paused={paused} />
       </Canvas>
     </div>
   );

@@ -1,0 +1,22 @@
+{
+  "exercises": {
+    "machineTranslated": false,
+    "player": {
+      "play": "Бастау",
+      "pause": "Үзіліс",
+      "resume": "Жалғастыру",
+      "replay": "Қайтадан",
+      "repetition": "TODO_KK",
+      "progress": "TODO_KK",
+      "loading": "TODO_KK",
+      "finished": "Жарайсыз! Жаттығу аяқталды",
+      "demoBadge": "Демо · маман тексермеген",
+      "locked": "Жабық",
+      "steps": "TODO_KK",
+      "noWebgl": "3D көрсету мүмкін емес. Төмендегі нұсқаулықты орындаңыз.",
+      "notFound": "TODO_KK",
+      "visualHammock": "TODO_KK",
+      "visualMannequin": "TODO_KK"
+    }
+  }
+}

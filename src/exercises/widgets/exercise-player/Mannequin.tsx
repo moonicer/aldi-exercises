@@ -147,7 +147,15 @@ function placeBetween(mesh: THREE.Object3D, a: [number, number], b: [number, num
   mesh.scale.set(1, Math.hypot(dx, dy) / rest, 1);
 }
 
-function MannequinScene({ exercise, progress }: { exercise: MannequinExercise; progress: number }) {
+function MannequinScene({
+  exercise,
+  progress,
+  paused,
+}: {
+  exercise: MannequinExercise;
+  progress: number;
+  paused: boolean;
+}) {
   const invalidate = useThree((s) => s.invalidate);
   const segMeshes = useRef<(THREE.Mesh | null)[]>([]);
   const pelvisMesh = useRef<THREE.Mesh>(null);
@@ -183,7 +191,7 @@ function MannequinScene({ exercise, progress }: { exercise: MannequinExercise; p
     }
   };
 
-  const current = useEased(progress, apply);
+  const current = useEased(progress, apply, paused);
 
   // Pose on mount and whenever the exercise changes (even if progress is settled).
   useLayoutEffect(() => {
@@ -230,6 +238,8 @@ export interface MannequinProps {
   exercise: MannequinExercise;
   /** 0 = rest pose, 1 = full exercise pose. The figure eases toward this value. */
   progress: number;
+  /** Freezes the motion where it is (e.g. while the player is paused). */
+  paused?: boolean;
   /** Accessible description of the illustration. */
   label: string;
   className?: string;
@@ -237,7 +247,7 @@ export interface MannequinProps {
   fallback?: ReactNode;
 }
 
-export function Mannequin({ exercise, progress, label, className, fallback }: MannequinProps) {
+export function Mannequin({ exercise, progress, paused = false, label, className, fallback }: MannequinProps) {
   return (
     <div className={className} role="img" aria-label={label} style={{ background: COLORS.background }}>
       <Canvas
@@ -247,7 +257,7 @@ export function Mannequin({ exercise, progress, label, className, fallback }: Ma
         onCreated={({ camera }) => camera.lookAt(-0.1, 0.2, 0)}
         fallback={fallback}
       >
-        <MannequinScene exercise={exercise} progress={progress} />
+        <MannequinScene exercise={exercise} progress={progress} paused={paused} />
       </Canvas>
     </div>
   );

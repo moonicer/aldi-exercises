@@ -1,0 +1,22 @@
+{
+  "exercises": {
+    "machineTranslated": true,
+    "player": {
+      "play": "Play",
+      "pause": "Pause",
+      "resume": "Resume",
+      "replay": "Replay",
+      "repetition": "Repetition {current} of {total}",
+      "progress": "Exercise progress",
+      "loading": "Loading 3D view…",
+      "finished": "Exercise complete",
+      "demoBadge": "Demo, not specialist-reviewed",
+      "locked": "Locked",
+      "steps": "Steps",
+      "noWebgl": "3D view is not available. Follow the steps below.",
+      "notFound": "Exercise not found.",
+      "visualHammock": "Pelvic floor muscles shown as a hammock",
+      "visualMannequin": "Figure doing the exercise"
+    }
+  }
+}
