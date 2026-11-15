@@ -11,7 +11,7 @@ export const color = {
   track: '#E6DCCF',
 
   // Text and interactive
-  text: '#1E5B57',
+  text: '#2F6A96',
   primary: '#7A64B8',
   textOnPrimary: '#FFFFFF',
   focusRing: '#E9A07A',

@@ -3,7 +3,7 @@
     "machineTranslated": false,
     "common": {
       "sourceBadge": "NHS және POGP ұсынымдары негізінде",
-      "reviewPlanned": "маман тексеруі жоспарланған",
+      "reviewPlanned": "Маман тексеруі жоспарланған",
       "locked": "Жабық"
     },
     "player": {
@@ -22,7 +22,7 @@
       "visualMannequin": "TODO_KK"
     },
     "catalog": {
-      "title": "TODO_KK",
+      "title": "Жаттығулар",
       "loading": "TODO_KK",
       "loadError": "TODO_KK",
       "retry": "TODO_KK",
