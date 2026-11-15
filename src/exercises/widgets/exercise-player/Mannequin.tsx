@@ -3,12 +3,8 @@ import { Canvas, useThree } from '@react-three/fiber';
 import * as THREE from 'three';
 import type { ExerciseId } from '../../../entities/exercise/types';
 import { useEased } from './useEased';
+import { color } from '../../shared/theme';
 
-const COLORS = {
-  body: '#A8C3A0',
-  mat: '#EADCCB',
-  background: '#FBF5EE',
-} as const;
 
 export type MannequinExercise = Extract<ExerciseId, 'pelvic-tilt' | 'bridge'>;
 
@@ -161,7 +157,7 @@ function MannequinScene({
   const pelvisMesh = useRef<THREE.Mesh>(null);
   const joints = useMemo(() => newJointMap(), []);
 
-  const material = useMemo(() => new THREE.MeshStandardMaterial({ color: COLORS.body, roughness: 0.7 }), []);
+  const material = useMemo(() => new THREE.MeshStandardMaterial({ color: color.mannequin, roughness: 0.7 }), []);
   const geometries = useMemo(
     () => SEGMENTS.map((s) => ({ geo: new THREE.CapsuleGeometry(s.radius, restLength(s), 6, 14), rest: restLength(s) })),
     [],
@@ -202,7 +198,7 @@ function MannequinScene({
 
   return (
     <>
-      <color attach="background" args={[COLORS.background]} />
+      <color attach="background" args={[color.sceneBackground]} />
       <ambientLight intensity={0.85} />
       <directionalLight position={[1, 3, 3]} intensity={1.3} />
       <directionalLight position={[-2, 1, -2]} intensity={0.35} />
@@ -210,7 +206,7 @@ function MannequinScene({
       {/* Exercise mat */}
       <mesh position={[-0.1, -0.01, 0]}>
         <boxGeometry args={[2.1, 0.02, 0.8]} />
-        <meshStandardMaterial color={COLORS.mat} roughness={0.95} />
+        <meshStandardMaterial color={color.mat} roughness={0.95} />
       </mesh>
 
       {/* Faceless head */}
@@ -249,7 +245,7 @@ export interface MannequinProps {
 
 export function Mannequin({ exercise, progress, paused = false, label, className, fallback }: MannequinProps) {
   return (
-    <div className={className} role="img" aria-label={label} style={{ background: COLORS.background }}>
+    <div className={className} role="img" aria-label={label} style={{ background: color.sceneBackground }}>
       <Canvas
         frameloop="demand"
         dpr={[1, 2]}

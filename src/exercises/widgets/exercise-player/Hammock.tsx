@@ -3,12 +3,10 @@ import { Canvas } from '@react-three/fiber';
 import { Line } from '@react-three/drei';
 import * as THREE from 'three';
 import { useEased } from './useEased';
+import { color } from '../../shared/theme';
 
-const COLORS = {
-  surface: '#E9A07A',
-  outline: '#1E5B57',
-  background: '#FBF5EE',
-} as const;
+const RELAXED_COLOR = new THREE.Color(color.hammockRelaxed);
+const LIFTED_COLOR = new THREE.Color(color.hammockLifted);
 
 // Hammock half-width (x) and half-depth (z), in world units.
 const W = 1.1;
@@ -107,7 +105,7 @@ function PelvisSides() {
     <>
       {([-1, 1] as const).map((side) => (
         <mesh key={side} geometry={geometry} scale={[side, 1, 1]}>
-          <meshStandardMaterial color={COLORS.outline} roughness={0.6} />
+          <meshStandardMaterial color={color.pelvis} roughness={0.6} />
         </mesh>
       ))}
     </>
@@ -130,24 +128,35 @@ function HammockScene({ lift, paused }: { lift: number; paused: boolean }) {
 
   const initialRim = useMemo(() => toPoints(rimPositions(initialLift)), [initialLift]);
 
+  // Surface color follows the lift: light lilac when relaxed, deep violet when lifted.
+  const surfaceMaterial = useMemo(
+    () =>
+      new THREE.MeshStandardMaterial({
+        color: new THREE.Color().lerpColors(RELAXED_COLOR, LIFTED_COLOR, initialLift),
+        roughness: 0.85,
+        side: THREE.DoubleSide,
+      }),
+    [initialLift],
+  );
+  useEffect(() => () => surfaceMaterial.dispose(), [surfaceMaterial]);
+
   useEased(target, (l) => {
     shapeSurface(geometry, l);
+    surfaceMaterial.color.lerpColors(RELAXED_COLOR, LIFTED_COLOR, l);
     rimRef.current?.geometry.setPositions(rimPositions(l));
   }, paused);
 
   return (
     <>
-      <color attach="background" args={[COLORS.background]} />
+      <color attach="background" args={[color.sceneBackground]} />
       <ambientLight intensity={0.8} />
       <directionalLight position={[2, 4, 3]} intensity={1.4} />
       <directionalLight position={[-3, 2, -2]} intensity={0.4} />
 
       <PelvisSides />
 
-      <mesh geometry={geometry}>
-        <meshStandardMaterial color={COLORS.surface} roughness={0.85} side={THREE.DoubleSide} />
-      </mesh>
-      <Line ref={rimRef} points={initialRim} color={COLORS.outline} lineWidth={2.5} />
+      <mesh geometry={geometry} material={surfaceMaterial} />
+      <Line ref={rimRef} points={initialRim} color={color.hammockOutline} lineWidth={2.5} />
     </>
   );
 }
@@ -166,7 +175,7 @@ export interface HammockProps {
 
 export function Hammock({ lift, paused = false, label, className, fallback }: HammockProps) {
   return (
-    <div className={className} role="img" aria-label={label} style={{ background: COLORS.background }}>
+    <div className={className} role="img" aria-label={label} style={{ background: color.sceneBackground }}>
       <Canvas
         frameloop="demand"
         dpr={[1, 2]}

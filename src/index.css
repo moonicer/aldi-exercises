@@ -1,7 +1,24 @@
 :root {
+  /* Mirrors src/exercises/shared/theme.ts (role names, kebab-case). Keep in sync. */
+  --color-background: #fbf5ee;
+  --color-surface: #fff8f1;
+  --color-surface-raised: #ffffff;
+  --color-track: #e6dccf;
+  --color-text: #1e5b57;
+  --color-primary: #1e5b57;
+  --color-text-on-primary: #ffffff;
+  --color-focus-ring: #e9a07a;
+  --color-scene-background: #fbf5ee;
+  --color-hammock-relaxed: #dcd0f5;
+  --color-hammock-lifted: #7a64b8;
+  --color-hammock-outline: #1e5b57;
+  --color-pelvis: #1e5b57;
+  --color-mannequin: #a8c3a0;
+  --color-mat: #eadccb;
+
   font: 16px/1.5 system-ui, 'Segoe UI', Roboto, sans-serif;
-  color: #1e5b57;
-  background: #fbf5ee;
+  color: var(--color-text);
+  background: var(--color-background);
 }
 
 body {
@@ -26,10 +43,10 @@ body {
 .app input[type='range'] {
   width: 100%;
   min-height: 44px;
-  accent-color: #1e5b57;
+  accent-color: var(--color-primary);
 }
 
 .app input[type='range']:focus-visible {
-  outline: 3px solid #e9a07a;
+  outline: 3px solid var(--color-focus-ring);
   outline-offset: 2px;
 }
